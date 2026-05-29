@@ -1,0 +1,135 @@
+:root {
+  --warna-primer: #4f46e5;
+  --warna-sukses: #16a34a;
+  --warna-bahaya: #dc2626;
+  --warna-abu: #9ca3af;
+  --warna-latar: #f8fafc;
+  --warna-card: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: var(--warna-latar);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.judul {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--warna-primer);
+  margin-bottom: 24px;
+}
+
+.form-tambah {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-tambah input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-tambah input:focus {
+  border-color: var(--warna-primer);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.btn-tambah {
+  background: var(--warna-primer);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn-tambah:hover {
+  opacity: 0.9;
+}
+
+.daftar-habit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: var(--warna-card);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.card.selesai {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.card.selesai .nama-habit {
+  text-decoration: line-through;
+  color: var(--warna-abu);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--warna-sukses);
+  flex-shrink: 0;
+}
+
+.nama-habit {
+  flex: 1;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.btn-hapus {
+  background: none;
+  border: none;
+  color: #d1d5db;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px;
+  border-radius: 6px;
+  transition: color 0.15s;
+}
+
+.btn-hapus:hover {
+  color: var(--warna-bahaya);
+}
+
+.kosong {
+  text-align: center;
+  color: var(--warna-abu);
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.ringkasan {
+  text-align: center;
+  font-size: 13px;
+  color: var(--warna-abu);
+  margin-bottom: 16px;
+}
